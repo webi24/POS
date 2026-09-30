@@ -1,0 +1,69 @@
+:root {
+  /* Design tokens. Green deliberately echoes trusted money movement; red is
+     reserved for real problems so its meaning stays unambiguous. */
+  --ink: #0f1b2d;
+  --ink-soft: #46586e;
+  --green: #00a651;
+  --green-deep: #007a3d;
+  --green-tint: #eaf7f0;
+  --amber: #f5a623;
+  --amber-deep: #8a5a00;
+  --red: #d64545;
+  --red-deep: #a32828;
+  --bg: #f7f9f8;
+  --surface: #ffffff;
+  --line: #d9e0dc;
+
+  font-family: 'Inter', 'Segoe UI', Tahoma, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--ink);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2 {
+  color: var(--ink);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+small {
+  font-size: 0.8rem;
+}
+
+/* Amounts are the hero on every screen. */
+.money {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
